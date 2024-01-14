@@ -20,6 +20,7 @@ def extract_pokemon_data(response_json):
         "sprites": response_json["sprites"]["other"]["home"]["front_default"],
         "types": [type["type"]["name"] for type in response_json["types"]],
     }
+    print(f"Extracted Pokemon data: {pokemon_data}")
     return pokemon_data
 
 def update_pokemon_data(pokemon_list):
@@ -34,6 +35,18 @@ def update_pokemon_data(pokemon_list):
 
     with open("pokemon.json", "w") as file:
         json.dump(data, file, indent=2)
+    print("Updated Pokemon data in pokemon.json")
+    sort_pokemon_json()
+
+def sort_pokemon_json():
+    with open("pokemon.json", "r") as file:
+        data = json.load(file)
+
+    sorted_data = dict(sorted(data.items(), key=lambda x: x[1]["id"]))
+
+    with open("pokemon.json", "w") as file:
+        json.dump(sorted_data, file, indent=2)
+    print("Sorted pokemon.json by 'id'")
 
 with open("moj-pokemon.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)

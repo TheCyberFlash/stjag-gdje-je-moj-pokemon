@@ -24,14 +24,6 @@
       "water"
     ]
   },
-  "eevee": {
-    "id": 133,
-    "name": "eevee",
-    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/133.png",
-    "types": [
-      "normal"
-    ]
-  },
   "pikachu": {
     "id": 25,
     "name": "pikachu",
@@ -40,36 +32,13 @@
       "electric"
     ]
   },
-  "scorbunny": {
-    "id": 813,
-    "name": "scorbunny",
-    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/813.png",
+  "gengar": {
+    "id": 94,
+    "name": "gengar",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/94.png",
     "types": [
-      "fire"
-    ]
-  },
-  "piplup": {
-    "id": 393,
-    "name": "piplup",
-    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/393.png",
-    "types": [
-      "water"
-    ]
-  },
-  "pancham": {
-    "id": 674,
-    "name": "pancham",
-    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/674.png",
-    "types": [
-      "fighting"
-    ]
-  },
-  "bidoof": {
-    "id": 399,
-    "name": "bidoof",
-    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/399.png",
-    "types": [
-      "normal"
+      "ghost",
+      "poison"
     ]
   },
   "horsea": {
@@ -80,6 +49,14 @@
       "water"
     ]
   },
+  "eevee": {
+    "id": 133,
+    "name": "eevee",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/133.png",
+    "types": [
+      "normal"
+    ]
+  },
   "snorlax": {
     "id": 143,
     "name": "snorlax",
@@ -88,13 +65,36 @@
       "normal"
     ]
   },
-  "gengar": {
-    "id": 94,
-    "name": "gengar",
-    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/94.png",
+  "piplup": {
+    "id": 393,
+    "name": "piplup",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/393.png",
     "types": [
-      "ghost",
-      "poison"
+      "water"
+    ]
+  },
+  "bidoof": {
+    "id": 399,
+    "name": "bidoof",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/399.png",
+    "types": [
+      "normal"
+    ]
+  },
+  "pancham": {
+    "id": 674,
+    "name": "pancham",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/674.png",
+    "types": [
+      "fighting"
+    ]
+  },
+  "scorbunny": {
+    "id": 813,
+    "name": "scorbunny",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/813.png",
+    "types": [
+      "fire"
     ]
   }
 }
