@@ -8,10 +8,19 @@ def fetch_pokemon_data(name):
     response = requests.get(url)
     
     if response.status_code == 200:
-        return response.json()
+        return extract_pokemon_data(response.json())
     else:
         print(f"Failed to fetch data for {name} from PokeAPI. Status code: {response.status_code}")
         return None
+    
+def extract_pokemon_data(response_json):
+    pokemon_data = {
+        "id": response_json["id"],
+        "name": response_json["name"],
+        "sprites": response_json["sprites"]["other"]["home"]["front_default"],
+        "types": [type["type"]["name"] for type in response_json["types"]],
+    }
+    return pokemon_data
 
 def update_pokemon_data(pokemon_list):
     if os.path.exists("pokemon.json") and os.path.getsize("pokemon.json") > 0:
