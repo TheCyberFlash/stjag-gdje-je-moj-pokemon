@@ -37,7 +37,7 @@ def update_pokemon_data(pokemon_list):
 
 with open("moj-pokemon.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
-    pokemon_list = [{"name": row["name"].lower(), "dexId": row["dexId"]} for row in reader]
+    pokemon_list = [{"name": row["name"].lower()} for row in reader]
 
 for pokemon in pokemon_list:
     if os.path.exists("pokemon.json") and os.path.getsize("pokemon.json") > 0:

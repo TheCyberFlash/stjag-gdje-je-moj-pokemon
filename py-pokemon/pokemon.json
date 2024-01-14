@@ -23,5 +23,78 @@
     "types": [
       "water"
     ]
+  },
+  "eevee": {
+    "id": 133,
+    "name": "eevee",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/133.png",
+    "types": [
+      "normal"
+    ]
+  },
+  "pikachu": {
+    "id": 25,
+    "name": "pikachu",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png",
+    "types": [
+      "electric"
+    ]
+  },
+  "scorbunny": {
+    "id": 813,
+    "name": "scorbunny",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/813.png",
+    "types": [
+      "fire"
+    ]
+  },
+  "piplup": {
+    "id": 393,
+    "name": "piplup",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/393.png",
+    "types": [
+      "water"
+    ]
+  },
+  "pancham": {
+    "id": 674,
+    "name": "pancham",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/674.png",
+    "types": [
+      "fighting"
+    ]
+  },
+  "bidoof": {
+    "id": 399,
+    "name": "bidoof",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/399.png",
+    "types": [
+      "normal"
+    ]
+  },
+  "horsea": {
+    "id": 116,
+    "name": "horsea",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/116.png",
+    "types": [
+      "water"
+    ]
+  },
+  "snorlax": {
+    "id": 143,
+    "name": "snorlax",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/143.png",
+    "types": [
+      "normal"
+    ]
+  },
+  "gengar": {
+    "id": 94,
+    "name": "gengar",
+    "sprites": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/94.png",
+    "types": [
+      "ghost",
+      "poison"
+    ]
   }
 }
