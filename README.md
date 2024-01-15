@@ -1,1 +1,1 @@
-# [Github Page](https://thecyberflash.github.io/gdje-je-moj-pokemon/)
+# [Github Page](https://thecyberflash.github.io/stjag-gdje-je-moj-pokemon/)
