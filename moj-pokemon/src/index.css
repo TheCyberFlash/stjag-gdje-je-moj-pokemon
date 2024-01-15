@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.reload-button{
+  font-size: 24px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.reload-button-small {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.pokemon-card {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #e23d3d;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.pokemon-card img {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.pokemon-card h2 {
+  margin: 0;
+  padding: 0;
+  color: #e23d3d;
+}
+
+.pokemon-info {
+  font-size: 14px;
+  margin-top: 5px;
+}

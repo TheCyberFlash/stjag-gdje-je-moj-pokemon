@@ -28,7 +28,7 @@ const AppContent = () => {
             {pokemonData && (
                 <button 
                     onClick={handleReload} 
-                    className="reload-button"
+                    className="reload-button-small reload-button"
                 >
                     Idemo opet!
                 </button>
