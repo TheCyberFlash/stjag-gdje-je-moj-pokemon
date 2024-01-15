@@ -7,7 +7,7 @@ export const PokemonProvider = ({ children }) => {
 
     const fetchRandomPokemon = async () => {
         try {
-            const response = await fetch('http://thecyberflash.pythonanywhere.com/get_random_pokemon');
+            const response = await fetch('https://thecyberflash.pythonanywhere.com/get_random_pokemon');
             const data = await response.json();
 
             setPokemonData(data);
