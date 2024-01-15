@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/stjag-gdje-je-moj-pokemon/static/css/main.f855e6bc.css",
-    "main.js": "/stjag-gdje-je-moj-pokemon/static/js/main.9a77e171.js",
+    "main.css": "/stjag-gdje-je-moj-pokemon/static/css/main.82d10189.css",
+    "main.js": "/stjag-gdje-je-moj-pokemon/static/js/main.523d7df3.js",
     "index.html": "/stjag-gdje-je-moj-pokemon/index.html",
-    "main.f855e6bc.css.map": "/stjag-gdje-je-moj-pokemon/static/css/main.f855e6bc.css.map",
-    "main.9a77e171.js.map": "/stjag-gdje-je-moj-pokemon/static/js/main.9a77e171.js.map"
+    "main.82d10189.css.map": "/stjag-gdje-je-moj-pokemon/static/css/main.82d10189.css.map",
+    "main.523d7df3.js.map": "/stjag-gdje-je-moj-pokemon/static/js/main.523d7df3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.9a77e171.js"
+    "static/css/main.82d10189.css",
+    "static/js/main.523d7df3.js"
   ]
 }
