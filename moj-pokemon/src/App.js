@@ -5,11 +5,6 @@ import { usePokemon } from './context/PokemonContext';
 
 const AppContent = () => {
     const { pokemonData, fetchRandomPokemon } = usePokemon();
-    console.log(pokemonData);
-
-    useEffect(() => {
-        fetchRandomPokemon();
-    }, [fetchRandomPokemon]);
 
     const handleReload = () => {
         fetchRandomPokemon();

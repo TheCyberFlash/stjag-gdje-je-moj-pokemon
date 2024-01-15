@@ -10,8 +10,6 @@ export const PokemonProvider = ({ children }) => {
             const response = await fetch('http://thecyberflash.pythonanywhere.com/get_random_pokemon');
             const data = await response.json();
 
-            console.log(data);
-
             setPokemonData(data);
         } catch (error) {
             console.error('Error fetching Pokemon data:', error);
