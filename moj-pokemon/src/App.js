@@ -1,25 +1,51 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import PokemonCard from './components/PokemonCard';
+import { usePokemon } from './context/PokemonContext';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const AppContent = () => {
+    const { pokemonData, fetchRandomPokemon } = usePokemon();
+    console.log(pokemonData);
+
+    useEffect(() => {
+        fetchRandomPokemon();
+    }, [fetchRandomPokemon]);
+
+    const handleReload = () => {
+        fetchRandomPokemon();
+    };
+
+    return (
+        <div className="app-container">
+            {pokemonData ? (
+                <PokemonCard pokemon={pokemonData} />
+            ) : (
+                <button 
+                    onClick={handleReload} 
+                    className="reload-button"
+                >
+                    GDJE JE MOJ
+                    <br />
+                    POKEMON
+                </button>
+            )}
+
+            {pokemonData && (
+                <button 
+                    onClick={handleReload} 
+                    className="reload-button"
+                >
+                    Idemo opet!
+                </button>
+            )}          
+        </div>
+    );
+};
+
+const App = () => {
+    return (
+            <AppContent />
+    );
+};
 
 export default App;

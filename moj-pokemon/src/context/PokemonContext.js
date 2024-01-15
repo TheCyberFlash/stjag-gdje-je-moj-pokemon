@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const PokemonContext = createContext();
 
@@ -8,8 +8,9 @@ export const PokemonProvider = ({ children }) => {
     const fetchRandomPokemon = async () => {
         try {
             const response = await fetch('http://thecyberflash.pythonanywhere.com/get_random_pokemon');
-
             const data = await response.json();
+
+            console.log(data);
 
             setPokemonData(data);
         } catch (error) {
@@ -24,11 +25,12 @@ export const PokemonProvider = ({ children }) => {
     );
 };
 
-export const usePokemonContext = () => {
+export const usePokemon = () => {
     const context = useContext(PokemonContext);
     if (!context) {
         throw new Error(
-            "usePokemonContext must be used within a PokemonProvider"
+            "usePokemon must be used within a PokemonProvider"
         );
     }
-}
+    return context;
+};
