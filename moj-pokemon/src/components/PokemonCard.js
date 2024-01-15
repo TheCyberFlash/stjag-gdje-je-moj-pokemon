@@ -16,16 +16,16 @@ const PokemonCard = ({ pokemon }) => {
         pokeTypes = types;
     }   
 
-    
-
+    const capitalizedFirstLetter = pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1);
+    const capitalizedTypes = pokeTypes.map(type => type.charAt(0).toUpperCase() + type.slice(1));
     return (
         <div className="pokemon-card">
-            <img src={pokeSprites} alt={pokemonName} />
+            <img src={pokeSprites} alt={capitalizedFirstLetter} />
 
-            <h2>{pokemonName}</h2>
+            <h2>{capitalizedFirstLetter}</h2>
 
             <p className="pokemon-info">Pokedex No. {pokedexId}</p>
-            <p className="pokemon-info">Type: {pokeTypes.join(',')}</p>
+            <p className="pokemon-info">Type: {capitalizedTypes.join(', ')}</p>
         </div>
         );
     };
