@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gdje-je-moj-pokemon/static/css/main.f855e6bc.css",
+    "main.js": "/gdje-je-moj-pokemon/static/js/main.ef637ba8.js",
+    "index.html": "/gdje-je-moj-pokemon/index.html",
+    "main.f855e6bc.css.map": "/gdje-je-moj-pokemon/static/css/main.f855e6bc.css.map",
+    "main.ef637ba8.js.map": "/gdje-je-moj-pokemon/static/js/main.ef637ba8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.ef637ba8.js"
+  ]
+}
