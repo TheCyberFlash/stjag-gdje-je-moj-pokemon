@@ -4,7 +4,7 @@ import PokemonCard from './components/PokemonCard';
 import { usePokemon } from './context/PokemonContext';
 
 const AppContent = () => {
-    const { pokemonData, fetchRandomPokemon } = usePokemon();
+    const { pokemonData, fetchRandomPokemon, loading } = usePokemon();
 
     const handleReload = () => {
         fetchRandomPokemon();
@@ -32,7 +32,17 @@ const AppContent = () => {
                 >
                     Idemo opet!
                 </button>
-            )}          
+            )}
+
+            {loading && (
+                <div className="spinner-container">
+                    <div className="spinner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>)}          
         </div>
     );
 };

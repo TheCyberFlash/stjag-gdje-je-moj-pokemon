@@ -4,11 +4,17 @@ const PokemonContext = createContext();
 
 export const PokemonProvider = ({ children }) => {
     const [pokemonData, setPokemonData] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const fetchRandomPokemon = async () => {
         try {
+            setLoading(true);
+
             const response = await fetch('https://thecyberflash.pythonanywhere.com/get_random_pokemon');
             const data = await response.json();
+
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            setLoading(false);
 
             setPokemonData(data);
         } catch (error) {
@@ -17,7 +23,7 @@ export const PokemonProvider = ({ children }) => {
     };
 
     return (
-        <PokemonContext.Provider value={{ pokemonData, fetchRandomPokemon }}>
+        <PokemonContext.Provider value={{ pokemonData, fetchRandomPokemon, loading }}>
             {children}
         </PokemonContext.Provider>
     );
