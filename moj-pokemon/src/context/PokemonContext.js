@@ -7,6 +7,8 @@ export const PokemonProvider = ({ children }) => {
     const [loading, setLoading] = useState(false);
 
     const fetchRandomPokemon = async () => {
+        if (loading) return;
+
         try {
             setLoading(true);
 
@@ -16,7 +18,7 @@ export const PokemonProvider = ({ children }) => {
             await new Promise(resolve => setTimeout(resolve, 2000));
             setLoading(false);
 
-            setPokemonData(data);
+            setPokemonData(data);                       
         } catch (error) {
             console.error('Error fetching Pokemon data:', error);
         }
