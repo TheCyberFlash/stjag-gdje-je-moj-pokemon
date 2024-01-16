@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/stjag-gdje-je-moj-pokemon/static/css/main.82d10189.css",
-    "main.js": "/stjag-gdje-je-moj-pokemon/static/js/main.523d7df3.js",
+    "main.css": "/stjag-gdje-je-moj-pokemon/static/css/main.fd334528.css",
+    "main.js": "/stjag-gdje-je-moj-pokemon/static/js/main.fa9a6cc6.js",
+    "static/js/845.086fd1ef.chunk.js": "/stjag-gdje-je-moj-pokemon/static/js/845.086fd1ef.chunk.js",
+    "static/media/grunt-birthday-party-sound-made-with-Voicemod-technology.mp3": "/stjag-gdje-je-moj-pokemon/static/media/grunt-birthday-party-sound-made-with-Voicemod-technology.2ddd7c3d98b3fb0260d6.mp3",
     "index.html": "/stjag-gdje-je-moj-pokemon/index.html",
-    "main.82d10189.css.map": "/stjag-gdje-je-moj-pokemon/static/css/main.82d10189.css.map",
-    "main.523d7df3.js.map": "/stjag-gdje-je-moj-pokemon/static/js/main.523d7df3.js.map"
+    "main.fd334528.css.map": "/stjag-gdje-je-moj-pokemon/static/css/main.fd334528.css.map",
+    "main.fa9a6cc6.js.map": "/stjag-gdje-je-moj-pokemon/static/js/main.fa9a6cc6.js.map",
+    "845.086fd1ef.chunk.js.map": "/stjag-gdje-je-moj-pokemon/static/js/845.086fd1ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82d10189.css",
-    "static/js/main.523d7df3.js"
+    "static/css/main.fd334528.css",
+    "static/js/main.fa9a6cc6.js"
   ]
 }
