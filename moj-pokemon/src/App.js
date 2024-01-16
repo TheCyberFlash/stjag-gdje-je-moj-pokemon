@@ -8,9 +8,7 @@ import gruntBirthdayPartySound from './audio/grunt-birthday-party-sound-made-wit
 
 const AppContent = () => {
     const [confettiActive, setConfettiActive] = useState(false);
-    const [playSound, setPlaySound] = useState(false);
     const { pokemonData, fetchRandomPokemon, loading } = usePokemon();
-    const audioRef = useRef();
 
     const handleReload = () => {
         fetchRandomPokemon();
@@ -20,7 +18,7 @@ const AppContent = () => {
     const [play] = useSound(gruntBirthdayPartySound);
 
     const triggerConfetti = async () => {
-        await new Promise(resolve => setTimeout(resolve, 2000));  
+        await new Promise(resolve => setTimeout(resolve, 2400));  
         play();      
         setConfettiActive(true);
         await new Promise(resolve => setTimeout(resolve, 3000));
