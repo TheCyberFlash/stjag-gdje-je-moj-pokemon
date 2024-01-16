@@ -17,7 +17,6 @@ export const PokemonProvider = ({ children }) => {
 
             await new Promise(resolve => setTimeout(resolve, 2000));
             setLoading(false);
-
             setPokemonData(data);                       
         } catch (error) {
             console.error('Error fetching Pokemon data:', error);
