@@ -9,6 +9,7 @@ import gruntBirthdayPartySound from './audio/grunt-birthday-party-sound-made-wit
 const AppContent = () => {
     const [confettiActive, setConfettiActive] = useState(false);
     const { pokemonData, fetchRandomPokemon, loading } = usePokemon();
+    const [showButton, setShowButton] = useState(false);
 
     const handleReload = () => {
         fetchRandomPokemon();
@@ -23,6 +24,7 @@ const AppContent = () => {
         setConfettiActive(true);
         await new Promise(resolve => setTimeout(resolve, 3000));
         setConfettiActive(false);
+        setShowButton(true);
     }
 
 
@@ -43,7 +45,7 @@ const AppContent = () => {
                 </button>
             )}
 
-            {pokemonData && (
+            {pokemonData && showButton &&(
                 <button 
                     onClick={handleReload} 
                     className="reload-button-small reload-button"
