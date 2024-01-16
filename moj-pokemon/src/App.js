@@ -23,7 +23,7 @@ const AppContent = () => {
         await new Promise(resolve => setTimeout(resolve, 2000));  
         play();      
         setConfettiActive(true);
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        await new Promise(resolve => setTimeout(resolve, 3000));
         setConfettiActive(false);
     }
 
