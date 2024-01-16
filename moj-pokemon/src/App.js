@@ -1,20 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './App.css';
 import PokemonCard from './components/PokemonCard';
 import { usePokemon } from './context/PokemonContext';
 import ConfettiComponent from './components/Confetti';
+import useSound from 'use-sound';
+import gruntBirthdayPartySound from './audio/grunt-birthday-party-sound-made-with-Voicemod-technology.mp3';
 
 const AppContent = () => {
     const [confettiActive, setConfettiActive] = useState(false);
+    const [playSound, setPlaySound] = useState(false);
     const { pokemonData, fetchRandomPokemon, loading } = usePokemon();
+    const audioRef = useRef();
 
     const handleReload = () => {
         fetchRandomPokemon();
         triggerConfetti();        
     };
 
+    const [play] = useSound(gruntBirthdayPartySound);
+
     const triggerConfetti = async () => {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 2000));  
+        play();      
         setConfettiActive(true);
         await new Promise(resolve => setTimeout(resolve, 5000));
         setConfettiActive(false);
@@ -23,9 +30,8 @@ const AppContent = () => {
 
     return (
         <div className="app-container">
-
             <ConfettiComponent active={confettiActive} />
-
+            
             {pokemonData ? (
                 <PokemonCard pokemon={pokemonData} />
             ) : (
