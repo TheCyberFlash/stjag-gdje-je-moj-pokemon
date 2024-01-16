@@ -12,6 +12,7 @@ const AppContent = () => {
     const [showButton, setShowButton] = useState(false);
 
     const handleReload = () => {
+        setShowButton(false);
         fetchRandomPokemon();
         triggerConfetti();        
     };
