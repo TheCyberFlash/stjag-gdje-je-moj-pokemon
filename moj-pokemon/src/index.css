@@ -44,6 +44,7 @@ code {
   border: 2px solid black;
   width: 200px;
   height: 200px;
+  background-color: #add8e6;
 }
 
 .pokemon-card h2 {
